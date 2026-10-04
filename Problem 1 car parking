@@ -1,0 +1,17 @@
+rate=30
+h=20
+n=10
+hours=int(input("enter your hour:"))
+if hours==2:
+    print("fees:",rate)
+elif hours>=3 and hours<5:
+    rate=rate+(hours-2)*h
+    print("fees:",rate)
+elif hours>=5:
+          rate=rate+h+(hours-5)*n
+          print("  fees:",rate)
+if rate>200:
+    discount_p=rate*10/100
+    rate=rate-discount_p
+    print(" discount:",discount_p)
+    print("total price:",rate)     
